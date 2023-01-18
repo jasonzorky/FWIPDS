@@ -15,7 +15,7 @@ export default function Authenticator ({ children }) {
         <h1 className='near-white'>Verifique seu email!</h1>
         <p>Clique no link enviado para o email: {identity && identity.email} para fazer login.</p>
         <form onSubmit={e => { e.preventDefault(); cancelRegisterAndStoreIdentity() }}>
-          <button type='submit' className='ph3 pv2'>Cancel</button>
+          <button type='submit' className='ph3 pv2'>Cancelar</button>
         </form>
       </div>
     )
@@ -26,17 +26,17 @@ export default function Authenticator ({ children }) {
     try {
       await registerAndStoreIdentity(email)
     } catch (err) {
-      throw new Error('Falha no registro', { cause: err })
+      throw new Error('Falha no Login', { cause: err })
     }
   }
 
   return (
     <form onSubmit={handleRegisterSubmit}>
       <div className='mb3'>
-        <label htmlFor='email' className='db mb2'>Email address:</label>
+        <label htmlFor='email' className='db mb2'>Digite seu Email:</label>
         <input id='email' className='db pa2 w-100' type='email' value={email} onChange={e => setEmail(e.target.value)} required />
       </div>
-      <button type='submit' className='ph3 pv2'>Register</button>
+      <button type='submit' className='ph3 pv2'>LOGIN</button>
     </form>
   )
 }
