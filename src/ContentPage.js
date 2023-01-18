@@ -61,23 +61,25 @@ const Uploading = ({ file, uploadedCarChunks }) => (
 
 const Errored = ({ error }) => (
   <div>
-    <h1 className='near-white'>⚠️ Error: failed to upload file: {error.message}</h1>
-    <p>Check the browser console for details.</p>
+    <h1 className='near-white'>⚠️ Error: Falha em fazer o upload: {error.message}</h1>
+    <p>Cheque o console para mais informação.</p>
   </div>
 )
 
 const Done = ({ file, dataCid, uploadedCarChunks }) => (
   <div>
-    <h1 className='near-white'>Done!</h1>
-    <p className='f6 code truncate'>{dataCid.toString()}</p>
-    <p><a href={`https://w3s.link/ipfs/${dataCid}`} className='blue'>View {file.name} on IPFS Gateway.</a></p>
     <p className='near-white'>Chunks ({uploadedCarChunks.length}):</p>
     {uploadedCarChunks.map(({ cid, size }) => (
       <p key={cid.toString()} className='f7 truncate'>
         {cid.toString()} ({size} bytes)
       </p>
     ))}
+    <h1 className='near-white'>UPLOAD COMPLETO!</h1>
+    <p className='near-white'>HASH: {dataCid.toString()}</p>
+    <p className='near-white'>LINK IPFS GERADO:</p>
+    <p><a href={`https://w3s.link/ipfs/${dataCid}`} className='blue'>{file.name}</a></p>
   </div>
 )
 
 export default withIdentity(ContentPage)
+
