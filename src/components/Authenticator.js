@@ -12,8 +12,8 @@ export default function Authenticator ({ children }) {
   if (authStatus === AuthStatus.EmailVerification) {
     return (
       <div>
-        <h1 className='near-white'>Verify your email address!</h1>
-        <p>Click the link in the email we sent to {identity && identity.email} to sign in.</p>
+        <h1 className='near-white'>Verifique seu email!</h1>
+        <p>Clique no link enviado para o email: {identity && identity.email} para fazer login.</p>
         <form onSubmit={e => { e.preventDefault(); cancelRegisterAndStoreIdentity() }}>
           <button type='submit' className='ph3 pv2'>Cancel</button>
         </form>
@@ -26,7 +26,7 @@ export default function Authenticator ({ children }) {
     try {
       await registerAndStoreIdentity(email)
     } catch (err) {
-      throw new Error('failed to register', { cause: err })
+      throw new Error('Falha no registro', { cause: err })
     }
   }
 
