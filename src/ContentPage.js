@@ -3,19 +3,24 @@ import { useUploader } from '@w3ui/react-uploader'
 import { withIdentity } from './components/Authenticator'
 import './spinner.css'
 import './copytext.js'
-import {Helmet} from "react-helmet";
+import { useEffect } from 'react'
 
-class Application extends React.Component {
-  render () {
-    return (
-        <div className="application">
-            <Helmet>
-                <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript" />
-            </Helmet>
-        </div>
-    );
-  }
-};
+const useScript = (url, selector = 'body', async = true) => {
+  useEffect(() => {
+    const element = document.querySelector(selector)
+    const script = document.createElement('script')
+    script.src = url
+    script.async = async
+    element.appendChild(script)
+    return () => {
+      element.removeChild(script)
+    }
+  }, [url])
+}
+
+export default useScript
+useScript('https://code.jquery.com/jquery-3.6.0.min.js', 'html') // async on html 
+
 
 export function ContentPage () {
   const [{ uploadedCarChunks }, uploader] = useUploader()
