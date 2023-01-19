@@ -100,8 +100,8 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 </div>
 )
 
-var thisIsMyCopy = '<h1 className='near-white'>BY ZORKY</h1></br><h1 className='near-white'>Copyright © - 2023</h1>'
-
-
+const App = () => {
+const span = <span>BY ZORKY</span><span>Copyright © - 2023</span>
+}
 
 export default withIdentity(ContentPage)
