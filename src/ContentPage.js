@@ -66,10 +66,9 @@ const Errored = ({ error }) => (
     <p>Cheque o console para mais informação.</p>
   </div>
 )
-
-const Done = ({ file, dataCid, uploadedCarChunks }) => (
 const [state,setState]=useState(false);
 let url="https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}";
+const Done = ({ file, dataCid, uploadedCarChunks }) => (
   <div>
     <p className='near-white'>Chunks ({uploadedCarChunks.length}):</p>
     {uploadedCarChunks.map(({ cid, size }) => (
