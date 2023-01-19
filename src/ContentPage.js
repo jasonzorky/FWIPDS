@@ -76,7 +76,7 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
     ))}
     <h1 className='near-white'>UPLOAD COMPLETO!</h1>
     <p className='near-white'>HASH: {dataCid.toString()}</p>
-    <p className='near-white'>LINK FW:</p><p><a href={`https://LinkDiretoPremium.ga/ipfs/${dataCid}/${file.name}`} className='blue'></a><h1>${file.name}</h1></p>
+    <p className='near-white'>LINK FW:</p><p><a href={`https://LinkDiretoPremium.ga/ipfs/${dataCid}/${file.name}`} className='blue'></a></p><h1>${file.name}</h1>
     <p className='near-white'>LINK W3S.Link:</p><p><a href={`https://w3s.link/ipfs/${dataCid}/${file.name}`} className='blue'>{file.name}</a></p>
     <p className='near-white'>LINK Gateway.IpfsCDN.io:</p><p><a href={`https://gateway.ipfscdn.io/ipfs/${dataCid}/${file.name}`} className='blue'>{file.name}</a></p>
     <p className='near-white'>LINK IPFS.Astyanax.io:</p><p><a href={`https://ipfs.astyanax.io/ipfs/${dataCid}/${file.name}`} className='blue'>{file.name}</a></p>
