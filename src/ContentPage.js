@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import { useUploader } from '@w3ui/react-uploader'
 import { withIdentity } from './components/Authenticator'
 import './spinner.css'
+import './copytext.js'
+import './rodape.css'
 
 
 export function ContentPage () {
@@ -99,13 +101,6 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 </div>
 )
 
-
-
-const myHTML = `<h1>John Doe</h1>`
-const App = () => <div>{myHTML}</div>
-
-
-
-
+<div id="root"></div>
 
 export default withIdentity(ContentPage)
