@@ -18,7 +18,6 @@ const useScript = (url, selector = 'body', async = true) => {
   }, [url])
 }
 
-export default useScript
 useScript('https://code.jquery.com/jquery-3.6.0.min.js', 'html') // async on html 
 
 
