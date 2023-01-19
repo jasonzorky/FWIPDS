@@ -77,7 +77,7 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
     <h1 className='near-white'>UPLOAD COMPLETO!</h1>
     <p className='near-white'>HASH: {dataCid.toString()}</p>
     <p className='near-white'>LINK IPFS GERADO:</p>
-    <p><a href={`https://w3s.link/ipfs/${dataCid}/{file.name}`} className='blue'>{file.name}</a></p>
+    <p><a href={`https://w3s.link/ipfs/${dataCid}/${file.name}/`} className='blue'>{file.name}</a></p>
   </div>
 )
 
