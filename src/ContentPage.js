@@ -77,18 +77,18 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
     <h1 className='near-white'>UPLOAD COMPLETO!</h1>
     <p className='near-white'>HASH: {dataCid.toString()}</p>
     <p className='near-white'>LINK FW:</p><p><a href={`https://LinkDiretoPremium.ga/${dataCid}/${file.name}`} className='blue'>{file.name}</a></p>
-    <p className='near-white'>LINK W3S.Link:</p><p><a href={`https://w3s.link/ipfs/${dataCid}/${file.name}`} className='blue'>{file.name}</a></p>
-    <p className='near-white'>LINK Gateway.IpfsCDN.io:</p><p><a href={`https://gateway.ipfscdn.io/ipfs/${dataCid}/${file.name}`} className='blue'>{file.name}</a></p>
-    <p className='near-white'>LINK IPFS.Astyanax.io:</p><p><a href={`https://ipfs.astyanax.io/ipfs/${dataCid}/${file.name}`} className='blue'>{file.name}</a></p>
+    <p className='near-white'>LINK W3S.Link:</p><p><a href={`https://w3s.link/ipfs/${dataCid}`} className='blue'>{file.name}</a></p>
+    <p className='near-white'>LINK Gateway.IpfsCDN.io:</p><p><a href={`https://gateway.ipfscdn.io/ipfs/${dataCid}`} className='blue'>{file.name}</a></p>
+    <p className='near-white'>LINK IPFS.Astyanax.io:</p><p><a href={`https://ipfs.astyanax.io/ipfs/${dataCid}`} className='blue'>{file.name}</a></p>
     <p className='near-white'>LINK ipfs.best-practice.se:</p><p><a href={`https://ipfs.best-practice.se/ipfs/${dataCid}/${file.name}`} className='blue'>{file.name}</a></p>
-    <p className='near-white'>LINK ipfs.nftstorage.link:</p><p><a href={`https://${dataCid}.ipfs.nftstorage.link/ipfs/${dataCid}/${file.name}`} className='blue'>{file.name}</a></p>
-    <p className='near-white'>LINK cloudflare-ipfs.com:</p><p><a href={`https://cloudflare-ipfs.com/ipfs/${dataCid}/${file.name}`} className='blue'>{file.name}</a></p>
-    <p className='near-white'>LINK ipfs.4everland.io:</p><p><a href={`https://${dataCid}.ipfs.4everland.io/${file.name}`} className='blue'>{file.name}</a></p>
-    <p className='near-white'>LINK gateway.ipfs.io:</p><p><a href={`https://gateway.ipfs.io/ipfs/${dataCid}/${file.name}`} className='blue'>{file.name}</a></p>
-    <p className='near-white'>LINK fleek.ipfs.io:</p><p><a href={`https://fleek.ipfs.io/ipfs/${dataCid}/${file.name}`} className='blue'>{file.name}</a></p>
-    <p className='near-white'>LINK ipfs-gateway.cloud:</p><p><a href={`https://${dataCid}.ipfs.ipfs-gateway.cloud/${file.name}`} className='blue'>{file.name}</a></p>
-    <p className='near-white'>LINK ipfs.dweb.link:</p><p><a href={`https://${dataCid}.ipfs.dweb.link/${file.name}`} className='blue'>{file.name}</a></p>
-    <p className='near-white'>LINK STORRY.TV:</p><p><a href={`https://${dataCid}.ipfs.storry.tv/${file.name}`} className='blue'>{file.name}</a></p>
+    <p className='near-white'>LINK ipfs.nftstorage.link:</p><p><a href={`https://${dataCid}.ipfs.nftstorage.link/ipfs/${dataCid}`} className='blue'>{file.name}</a></p>
+    <p className='near-white'>LINK cloudflare-ipfs.com:</p><p><a href={`https://cloudflare-ipfs.com/ipfs/${dataCid}`} className='blue'>{file.name}</a></p>
+    <p className='near-white'>LINK ipfs.4everland.io:</p><p><a href={`https://${dataCid}.ipfs.4everland.io`} className='blue'>{file.name}</a></p>
+    <p className='near-white'>LINK gateway.ipfs.io:</p><p><a href={`https://gateway.ipfs.io/ipfs/${dataCid}`} className='blue'>{file.name}</a></p>
+    <p className='near-white'>LINK fleek.ipfs.io:</p><p><a href={`https://fleek.ipfs.io/ipfs/${dataCid}`} className='blue'>{file.name}</a></p>
+    <p className='near-white'>LINK ipfs-gateway.cloud:</p><p><a href={`https://${dataCid}.ipfs.ipfs-gateway.cloud`} className='blue'>{file.name}</a></p>
+    <p className='near-white'>LINK ipfs.dweb.link:</p><p><a href={`https://${dataCid}.ipfs.dweb.link/`} className='blue'>{file.name}</a></p>
+    <p className='near-white'>LINK STORRY.TV:</p><p><a href={`https://${dataCid}.ipfs.storry.tv/`} className='blue'>{file.name}</a></p>
   </div>
 )
 
