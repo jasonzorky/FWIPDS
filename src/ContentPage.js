@@ -95,8 +95,13 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 <a href={`https://ipfs.best-practice.se/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>https://ipfs.best-practice.se/ipfs/${dataCid.toString()}/?filename={file.name}</a>{'\n'}
 <a href={`https://${dataCid}.ipfs.nftstorage.link/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>https://{dataCid.toString()}.ipfs.nftstorage.link/ipfs/{dataCid.toString()}/?filename={file.name}</a>{'\n'}
 <a href={`https://${dataCid}.ipfs.4everland.io/?filename=${file.name}`} className='blue'>https://{dataCid.toString()}.ipfs.4everland.io/?filename={file.name}</a>{'\n'}
-{'/br'}
-{'/br'}
+{'\n'}
+{'\n'}
+{'\n'}
+{'\n'}
+{'\n'}
+
+
 </div>
 )
 
