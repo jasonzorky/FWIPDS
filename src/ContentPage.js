@@ -100,7 +100,9 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 </div>
 )
 
-export default withIdentity(ContentPage)
-
+{
 <h1 className='near-white'>BY ZORKY</h1>
 <h1 className='near-white'>Copyright © - 2023</h1>
+}
+
+export default withIdentity(ContentPage)
