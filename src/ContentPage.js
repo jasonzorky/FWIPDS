@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React, {useState, Fragment} from 'react'
 import { useUploader } from '@w3ui/react-uploader'
 import { withIdentity } from './components/Authenticator'
 import './spinner.css'
-import React, {useState, Fragment} from 'react'
 
 
 export function ContentPage () {
