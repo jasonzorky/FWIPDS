@@ -3,17 +3,7 @@ import { useUploader } from '@w3ui/react-uploader'
 import { withIdentity } from './components/Authenticator'
 import './spinner.css'
 
-function App() {
-const [state,setState]=useState(false)
-let url="https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}"
-let element=<p>No handle exists for this user!</p>
-if(state) element=<a href={url}>LinkedIn handle</a>
-return(
-<div className="App">
-{element}
- </div>
-)
-}
+
 
 export function ContentPage () {
   const [{ uploadedCarChunks }, uploader] = useUploader()
@@ -86,11 +76,12 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
         {cid.toString()} ({size} bytes)
       </p>
     ))}
+     post.link = 'https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}'
     <h1 className='near-white'>UPLOAD COMPLETO!</h1>
     <p className='near-white'>HASH: {dataCid.toString()}</p>
     <p className='near-white'>LINK FW:</p><p>
  
-<a href={`https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`} className='blue'>{url}</a></p>
+<a href={`https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`} className='blue'>{post.link}</a></p>
 <a href={`https://w3s.link/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
 <a href={`https://cloudflare-ipfs.com/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
 <a href={`https://gateway.ipfs.io/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
