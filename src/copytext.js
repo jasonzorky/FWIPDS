@@ -1,1 +1,4 @@
-var fullUrl = window.location.protocol + "//" + window.location.hostname + window.location.pathname;
+// jquery-global.js
+import jquery from 'jquery';
+window.jQuery = jquery;
+window.$ = jquery;
