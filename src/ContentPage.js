@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useUploader } from '@w3ui/react-uploader'
 import { withIdentity } from './components/Authenticator'
 import './spinner.css'
-import { Link } from 'react-router-dom'
+import { Link } from '@types/react-router-dom'
 
 export function ContentPage () {
   const [{ uploadedCarChunks }, uploader] = useUploader()
