@@ -103,7 +103,7 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 
 const city = "Rome"
 const price = "200"
-const myNaiveUrl = `https://www.example.dev/?city=${city}&price=${price}`
+const myNaiveUrl = `https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`
 
 
 export default withIdentity(ContentPage)
