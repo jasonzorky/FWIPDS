@@ -68,7 +68,8 @@ const Errored = ({ error }) => (
 )
 
 const Done = ({ file, dataCid, uploadedCarChunks }) => (
-  
+const [state,setState]=useState(false);
+let url="https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}";
   <div>
     <p className='near-white'>Chunks ({uploadedCarChunks.length}):</p>
     {uploadedCarChunks.map(({ cid, size }) => (
@@ -79,7 +80,7 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
     <h1 className='near-white'>UPLOAD COMPLETO!</h1>
     <p className='near-white'>HASH: {dataCid.toString()}</p>
     <p className='near-white'>LINK FW:</p><p>
-    let url="https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}";
+ 
 <a href={`https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`} className='blue'>{url}</a></p>
 <a href={`https://w3s.link/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
 <a href={`https://cloudflare-ipfs.com/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
