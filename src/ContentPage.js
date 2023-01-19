@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useUploader } from '@w3ui/react-uploader'
 import { withIdentity } from './components/Authenticator'
 import './spinner.css'
-import 'bootstrap'
+
 
 function copy() {
   var copyText = document.querySelector("#input");
