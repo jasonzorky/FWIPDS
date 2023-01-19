@@ -78,7 +78,6 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
     <p className='near-white'>HASH: {dataCid.toString()}</p>
     <p className='near-white'>LINK FW:</p><p><a href={`https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a></p>
 
-</div>
 <div onClick="this.form.textarea2.focus();this.form.textarea2.select(); document.execCommand('copy')" class='textarea' contenteditable>
 <a href={`https://w3s.link/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
 <a href={`https://cloudflare-ipfs.com/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
@@ -93,6 +92,8 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 <a href={`https://${dataCid}.ipfs.nftstorage.link/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
 <a href={`https://${dataCid}.ipfs.4everland.io/?filename=${file.name}`} className='blue'>{file.name}</a>
 </div>
+</div>
+
 
 
 )
