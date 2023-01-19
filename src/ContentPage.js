@@ -76,7 +76,7 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
     ))}
     <h1 className='near-white'>UPLOAD COMPLETO!</h1>
     <p className='near-white'>HASH: {dataCid.toString()}</p>
-    <p className='near-white'>LINK FW:</p><p><a href={`https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`} className='blue'>https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}</a></p>
+    <p className='near-white'>LINK FW:</p><p><a href={`https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`} className='blue'>https://LinkDiretoPremium.ga/{dataCid}/?filename={file.name}</a></p>
 
 
 
