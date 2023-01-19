@@ -100,9 +100,8 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 </div>
 )
 
-{
-<h1 className='near-white'>BY ZORKY</h1>
-<h1 className='near-white'>Copyright © - 2023</h1>
-}
+var thisIsMyCopy = '<h1 className='near-white'>BY ZORKY</h1>{'\n'}<h1 className='near-white'>Copyright © - 2023</h1>'
+
+
 
 export default withIdentity(ContentPage)
