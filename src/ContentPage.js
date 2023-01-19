@@ -99,8 +99,9 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 {'\n'}
 {'\n'}
 </div>
+<div id="root"></div>
 )
 
-<div id="root"></div>
+
 
 export default withIdentity(ContentPage)
