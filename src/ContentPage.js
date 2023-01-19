@@ -99,9 +99,5 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 
 )
 
-$('a').each(function(){
-    $(this).text(this.protocol + "//" + (this.hostname || this.pathname));
-});
-
 export default withIdentity(ContentPage)
 
