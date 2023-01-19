@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useUploader } from '@w3ui/react-uploader'
 import { withIdentity } from './components/Authenticator'
 import './spinner.css'
-import { Fragment } from 'react' // react version > 16.0
+import React, {useState, Fragment} from 'react'
 
 
 export function ContentPage () {
@@ -100,12 +100,20 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 </div>
 )
 
+BY ZORKY - Copyright © - 2023
 
-var thisIsMyCopy = (
-  <Fragment>
-    <span>BY ZORKY - Copyright © - 2023</span>
-  </Fragment>
-)
+
+
+const thisIsMyCopy = Fragment('<p><strong>BY ZORKY - Copyright © - 2023</strong></p>')
+
+render: function() {
+    return (
+        <div className="content">{thisIsMyCopy}</div>
+    );
+}
+
+
+
 
 
 export default withIdentity(ContentPage)
