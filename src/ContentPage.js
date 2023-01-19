@@ -77,8 +77,9 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
     <h1 className='near-white'>UPLOAD COMPLETO!</h1>
     <p className='near-white'>HASH: {dataCid.toString()}</p>
     <p className='near-white'>LINK FW:</p><p><a href={`https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a></p>
+  </div>
 <form>
-<textarea name="textarea2" readonly="readonly">
+<textarea onclick="this.focus();this.select();document.execCommand('copy')" name="textarea1" class="textarea1" readonly="readonly">
 <a href={`https://w3s.link/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
 <a href={`https://cloudflare-ipfs.com/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
 <a href={`https://gateway.ipfs.io/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
@@ -92,10 +93,6 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 <a href={`https://${dataCid}.ipfs.nftstorage.link/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
 <a href={`https://${dataCid}.ipfs.4everland.io/?filename=${file.name}`} className='blue'>{file.name}</a>
 </textarea>
-<div><input title="One click transfers the code to the clipboard" type="button" value="copy to clipboard" onClick="this.form.textarea2.focus();this.form.textarea2.select(); document.execCommand('copy')"></input>
-</div>
-</form>
-  </div>
 )
 
 export default withIdentity(ContentPage)
