@@ -103,13 +103,7 @@ BY ZORKY - Copyright © - 2023
 
 
 
-const thisIsMyCopy = Fragment('<h1 className='near-white'>UPLOAD COMPLETO!</h1>')
-
-render: function() {
-    return (
-        <div className="content">{thisIsMyCopy}</div>
-    );
-}
+const [thisIsMyCopy, setThisIsMyCopy] = useState(<Fragment><p>copy copy copy <strong>strong copy</strong></p></Fragment>)
 
 
 
