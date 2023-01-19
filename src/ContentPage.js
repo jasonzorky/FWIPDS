@@ -101,13 +101,13 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 )
 
 const App = () => {
-const span = <span>BY ZORKY</span><span>Copyright © - 2023</span>
+const span = <span>BY ZORKY</br>Copyright © - 2023</span>
 }
-return (
-<div>
-{span}
-</div>
-)
+ReactDOM.render(<App />, document.getElementById("parent"));
+return(
+      <div id="parent">
+      </div>
+      )
 
 
 
