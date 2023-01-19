@@ -1,2 +1,1 @@
-var r = new RegExp(/http:\/\/[^/]+\/[^/]+/);
-var match = r.exec(document.location.href)
+var fullUrl = window.location.protocol + "//" + window.location.hostname + window.location.pathname;
