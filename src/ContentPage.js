@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useUploader } from '@w3ui/react-uploader'
 import { withIdentity } from './components/Authenticator'
 import './spinner.css'
+import $ from 'jquery';
 import './copytext.js'
 
 
