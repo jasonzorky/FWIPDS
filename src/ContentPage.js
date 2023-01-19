@@ -99,13 +99,5 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 </div>
 )
 
-const App = () => {
-    return (
-        <div>
-            <h1>Why returning multiple elements from React is invalid.</h1>
-            <h2>Common React errors</h2>
-        </div>
-    )
-}
 
 export default withIdentity(ContentPage)
