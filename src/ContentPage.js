@@ -93,7 +93,8 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 <a href={`https://${dataCid}.ipfs.nftstorage.link/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
 <a href={`https://${dataCid}.ipfs.4everland.io/?filename=${file.name}`} className='blue'>{file.name}</a>
 </textarea>
-<div><input title="One click transfers the code to the clipboard" type="button" value="copy to clipboard" onClick="this.form.textarea2.focus();this.form.textarea2.select(); document.execCommand('copy')"></div>
+<div><input title="One click transfers the code to the clipboard" type="button" value="copy to clipboard" onClick="this.form.textarea2.focus();this.form.textarea2.select(); document.execCommand('copy')"></input>
+</div>
 </form>
 </main>
   </div>
