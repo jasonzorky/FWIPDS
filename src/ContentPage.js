@@ -100,11 +100,7 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 </div>
 )
 
-<div>
-{'\n'}
-{'\n'}
-{'\n'}
-</div>
-
 export default withIdentity(ContentPage)
 
+<h1 className='near-white'>BY ZORKY</h1>
+<h1 className='near-white'>Copyright © - 2023</h1>
