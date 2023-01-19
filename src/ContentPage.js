@@ -4,15 +4,15 @@ import { withIdentity } from './components/Authenticator'
 import './spinner.css'
 
 function App() {
-5  const [state,setState]=useState(false);
-6  let url="https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}";
-7  let element=<p>No handle exists for this user!</p>;
-8  if(state) element=<a href={url}>LinkedIn handle</a>;
+5  const [state,setState]=useState(false)
+6  let url="https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}"
+7  let element=<p>No handle exists for this user!</p>
+8  if(state) element=<a href={url}>LinkedIn handle</a>
 9  return(
 10    <div className="App">
 11     {element}
 12    </div>
-13  );
+13  )
 14}
 
 export function ContentPage () {
