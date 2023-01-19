@@ -34,12 +34,6 @@
     ]
   }
 }
-{
-  "name": "copy-to-clipboard-with-js",
-  "version": "1.0.0",
-  "description": "",
-  "main": "public/index.html",
-  },
   "dependencies": {
     "bootstrap": "4.6.0",
     "jquery": "3.5.1",
