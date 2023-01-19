@@ -82,7 +82,7 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
     <h1 className='near-white'>UPLOAD COMPLETO!</h1>
     <p className='near-white'>HASH: {dataCid.toString()}</p>
     <p className='near-white'>LINK FW:</p><p>
- 
+var myNaiveUrl = `https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`
 <a href={`https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`} className='blue'>{myNaiveUrl}</a></p>
 <a href={`https://w3s.link/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
 <a href={`https://cloudflare-ipfs.com/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
@@ -100,10 +100,6 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 
 </div>
 )
-
-const city = "Rome"
-const price = "200"
-const myNaiveUrl = `https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`
 
 
 export default withIdentity(ContentPage)
