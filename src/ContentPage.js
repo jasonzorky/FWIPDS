@@ -99,8 +99,6 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 </div>
 )
 
-BY ZORKY - Copyright © - 2023
-
 
 
 const [thisIsMyCopy, setThisIsMyCopy] = useState(<Fragment><p>copy copy copy <strong>strong copy</strong></p></Fragment>)
