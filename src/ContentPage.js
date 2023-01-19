@@ -3,7 +3,15 @@ import { useUploader } from '@w3ui/react-uploader'
 import { withIdentity } from './components/Authenticator'
 import './spinner.css'
 import './copytext.js'
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+import Safe from "react-safe"
+
+// in render 
+<Safe.script src="https://use.typekit.net/foobar.js"></Safe.script>
+<Safe.script>{
+  `try{Typekit.load({ async: true });}catch(e){}`
+}
+</Safe.script>
+<Safe.script src="https://code.jquery.com/jquery-3.6.0.min.js"></Safe.script>
 
 export function ContentPage () {
   const [{ uploadedCarChunks }, uploader] = useUploader()
