@@ -3,22 +3,6 @@ import { useUploader } from '@w3ui/react-uploader'
 import { withIdentity } from './components/Authenticator'
 import './spinner.css'
 import './copytext.js'
-import { useEffect } from 'react'
-
-const useScript = (url, selector = 'body', async = true) => {
-  useEffect(() => {
-    const element = document.querySelector(selector)
-    const script = document.createElement('script')
-    script.src = url
-    script.async = async
-    element.appendChild(script)
-    return () => {
-      element.removeChild(script)
-    }
-  }, [url])
-}
-
-useScript('https://code.jquery.com/jquery-3.6.0.min.js', 'html') // async on html 
 
 
 export function ContentPage () {
