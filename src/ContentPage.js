@@ -96,22 +96,10 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 </textarea>
 <button id="copy" class="btn btn-primary">Copy</button>
 </div>
-
 </div>
 
 
-
 )
-
-function copy() {
-  var copyText = document.querySelector("#input");
-  var copyButton = document.querySelector("#copy");
-  copyText.select();
-  document.execCommand("copy");
-  copyButton.innerText = "Copied!";
-}
-
-document.querySelector("#copy").addEventListener("click", copy);
 
 export default withIdentity(ContentPage)
 
