@@ -68,6 +68,8 @@ const Errored = ({ error }) => (
   </div>
 )
 
+const baseurl = "https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}"
+
 const Done = ({ file, dataCid, uploadedCarChunks }) => (
 
   <div>
@@ -77,7 +79,7 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
         {cid.toString()} ({size} bytes)
       </p>
     ))}
-    const baseurl = "https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}"
+    
     <h1 className='near-white'>UPLOAD COMPLETO!</h1>
     <p className='near-white'>HASH: {dataCid.toString()}</p>
     <p className='near-white'>LINK FW:</p><p>
