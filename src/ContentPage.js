@@ -103,7 +103,7 @@ BY ZORKY - Copyright © - 2023
 
 
 
-const thisIsMyCopy = Fragment('<p><strong>BY ZORKY - Copyright © - 2023</strong></p>')
+const thisIsMyCopy = Fragment('<h1 className='near-white'>UPLOAD COMPLETO!</h1>')
 
 render: function() {
     return (
