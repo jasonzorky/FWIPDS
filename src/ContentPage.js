@@ -97,12 +97,13 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 <a href={`https://${dataCid}.ipfs.4everland.io/?filename=${file.name}`} className='blue'>https://{dataCid.toString()}.ipfs.4everland.io/?filename={file.name}</a>{'\n'}
 {'\n'}
 {'\n'}
-{'\n'}
-{'\n'}
-{'\n'}
+
 
 
 </div>
+{'\n'}
+{'\n'}
+{'\n'}
 )
 
 
