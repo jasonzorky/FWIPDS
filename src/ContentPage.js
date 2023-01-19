@@ -3,6 +3,8 @@ import { useUploader } from '@w3ui/react-uploader'
 import { withIdentity } from './components/Authenticator'
 import './spinner.css'
 
+const [state,setState]=useState(false);
+let url="https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}";
 
 export function ContentPage () {
   const [{ uploadedCarChunks }, uploader] = useUploader()
@@ -66,8 +68,7 @@ const Errored = ({ error }) => (
     <p>Cheque o console para mais informação.</p>
   </div>
 )
-const [state,setState]=useState(false);
-let url="https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}";
+
 const Done = ({ file, dataCid, uploadedCarChunks }) => (
   <div>
     <p className='near-white'>Chunks ({uploadedCarChunks.length}):</p>
