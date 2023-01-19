@@ -78,7 +78,6 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
     <p className='near-white'>HASH: {dataCid.toString()}</p>
     <p className='near-white'>LINK FW:</p><p><a href={`https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a></p>
   </div>
-<form>
 <textarea onclick="this.focus();this.select();document.execCommand('copy')" name="textarea1" class="textarea1" readonly="readonly">
 <a href={`https://w3s.link/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
 <a href={`https://cloudflare-ipfs.com/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
