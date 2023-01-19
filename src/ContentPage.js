@@ -68,9 +68,6 @@ const Errored = ({ error }) => (
   </div>
 )
 
-const city = "Rome"
-const price = "200"
-const myNaiveUrl = `https://www.example.dev/?city=${city}&price=${price}`
 
 const Done = ({ file, dataCid, uploadedCarChunks }) => (
 
@@ -104,6 +101,9 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 </div>
 )
 
+const city = "Rome"
+const price = "200"
+const myNaiveUrl = `https://www.example.dev/?city=${city}&price=${price}`
 
 
 export default withIdentity(ContentPage)
