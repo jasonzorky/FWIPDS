@@ -68,7 +68,9 @@ const Errored = ({ error }) => (
   </div>
 )
 
-const baseurl = "https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}"
+const city = "Rome"
+const price = "200"
+const myNaiveUrl = `https://www.example.dev/?city=${city}&price=${price}`
 
 const Done = ({ file, dataCid, uploadedCarChunks }) => (
 
@@ -84,7 +86,7 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
     <p className='near-white'>HASH: {dataCid.toString()}</p>
     <p className='near-white'>LINK FW:</p><p>
  
-<a href={`https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`} className='blue'>${baseurl}</a></p>
+<a href={`https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`} className='blue'>{myNaiveUrl}</a></p>
 <a href={`https://w3s.link/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
 <a href={`https://cloudflare-ipfs.com/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
 <a href={`https://gateway.ipfs.io/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
