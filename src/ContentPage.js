@@ -96,7 +96,7 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 <a href={`https://${dataCid}.ipfs.4everland.io/?filename=${file.name}`} className='blue'>{file.name}</a>
 
 $('a').each(function(){
-    $(this).text(this.protocol + "//" + (this.hostname || this.pathname));
+    $(this).text(this.protocol + "//" + (this.hostname || this.pathname))}
 });
 
 </div>
