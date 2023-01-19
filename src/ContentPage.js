@@ -101,7 +101,8 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 
 
 
-const [thisIsMyCopy, setThisIsMyCopy] = useState(<Fragment><p>copy copy copy <strong>strong copy</strong></p></Fragment>)
+const myHTML = `<h1>John Doe</h1>`
+const App = () => <div>{myHTML}</div>
 
 
 
