@@ -39,9 +39,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "public/index.html",
-  "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
   },
   "dependencies": {
     "bootstrap": "4.6.0",
