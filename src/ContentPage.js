@@ -103,5 +103,12 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 const App = () => {
 const span = <span>BY ZORKY</span><span>Copyright © - 2023</span>
 }
+return (
+<div>
+{span}
+</div>
+)
+
+
 
 export default withIdentity(ContentPage)
