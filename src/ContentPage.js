@@ -103,7 +103,7 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 
 var thisIsMyCopy = (
   <Fragment>
-    <span>BY ZORKY</br>Copyright © - 2023</span>
+    <span>BY ZORKY - Copyright © - 2023</span>
   </Fragment>
 )
 
