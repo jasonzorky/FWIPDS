@@ -23,3 +23,14 @@
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
 }
+main {
+    margin: 0 auto 3em;
+    max-width: 800px;
+    text-align: center;
+}
+textarea {
+    box-sizing: border-box;
+    min-height: 200px;
+    min-width: 500px;
+    padding: 0.5em 1em;
+}
