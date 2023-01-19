@@ -77,7 +77,6 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
     <h1 className='near-white'>UPLOAD COMPLETO!</h1>
     <p className='near-white'>HASH: {dataCid.toString()}</p>
     <p className='near-white'>LINK FW:</p><p><a href={`https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a></p>
-<main>
 <form>
 <textarea name="textarea2" readonly="readonly">
 <a href={`https://w3s.link/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>{file.name}</a>
@@ -96,7 +95,6 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 <div><input title="One click transfers the code to the clipboard" type="button" value="copy to clipboard" onClick="this.form.textarea2.focus();this.form.textarea2.select(); document.execCommand('copy')"></input>
 </div>
 </form>
-</main>
   </div>
 )
 
