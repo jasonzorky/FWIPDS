@@ -2,8 +2,6 @@ import React, {useState} from 'react'
 import { useUploader } from '@w3ui/react-uploader'
 import { withIdentity } from './components/Authenticator'
 import './spinner.css'
-import './copytext.js'
-import './rodape.css'
 
 
 export function ContentPage () {
@@ -99,9 +97,15 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
 {'\n'}
 {'\n'}
 </div>
-<div id="root"></div>
 )
 
-
+const App = () => {
+    return (
+        <div>
+            <h1>Why returning multiple elements from React is invalid.</h1>
+            <h2>Common React errors</h2>
+        </div>
+    )
+}
 
 export default withIdentity(ContentPage)
