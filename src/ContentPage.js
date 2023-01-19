@@ -3,15 +3,19 @@ import { useUploader } from '@w3ui/react-uploader'
 import { withIdentity } from './components/Authenticator'
 import './spinner.css'
 import './copytext.js'
-import Safe from "react-safe"
+import {Helmet} from "react-helmet";
 
-// in render 
-<Safe.script src="https://use.typekit.net/foobar.js"></Safe.script>
-<Safe.script>{
-  `try{Typekit.load({ async: true });}catch(e){}`
-}
-</Safe.script>
-<Safe.script src="https://code.jquery.com/jquery-3.6.0.min.js"></Safe.script>
+class Application extends React.Component {
+  render () {
+    return (
+        <div className="application">
+            <Helmet>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript" />
+            </Helmet>
+        </div>
+    );
+  }
+};
 
 export function ContentPage () {
   const [{ uploadedCarChunks }, uploader] = useUploader()
