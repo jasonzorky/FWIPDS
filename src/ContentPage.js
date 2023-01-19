@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { useUploader } from '@w3ui/react-uploader'
 import { withIdentity } from './components/Authenticator'
 import './spinner.css'
-import $ from 'jquery';
 import './copytext.js'
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 export function ContentPage () {
   const [{ uploadedCarChunks }, uploader] = useUploader()
