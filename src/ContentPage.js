@@ -81,12 +81,12 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
     <h1 className='near-white'>UPLOAD COMPLETO!</h1>
     <p className='near-white'>HASH:{dataCid.toString()}</p>
 
-<h5><a href={`https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`} className='blue' target="_blank">https://LinkDiretoPremium.ga/{dataCid.toString()}/?filename={file.name}</a></h5>
-<h5><a href={`https://cloudflare-ipfs.com/ipfs/${dataCid}/?filename=${file.name}`} className='blue' target="_blank">https://cloudflare-ipfs.com/ipfs/{dataCid.toString()}/?filename={file.name}</a></h5>
-<h5><a href={`https://gateway.ipfs.io/ipfs/${dataCid}/?filename=${file.name}`} className='blue' target="_blank">https://gateway.ipfs.io/ipfs/{dataCid.toString()}/?filename={file.name}</a></h5>
-<h5><a href={`https://gateway.ipfscdn.io/ipfs/${dataCid}/?filename=${file.name}`} className='blue' target="_blank">https://gateway.ipfscdn.io/ipfs/{dataCid.toString()}/?filename={file.name}</a></h5>
-<h5><a href={`https://ipns.co/ipfs/${dataCid}/?filename=${file.name}`} className='blue' target="_blank">https://ipns.co/ipfs/{dataCid.toString()}/?filename={file.name}</a></h5>
-<h5><a href={`https://gateway.pinata.cloud/ipfs/${dataCid}/?filename=${file.name}`} className='blue' target="_blank">https://gateway.pinata.cloud/ipfs/{dataCid.toString()}/?filename={file.name}</a></h5>
+<h5><a href={`https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`} className='blue' rel="noopener" target="_blank">https://LinkDiretoPremium.ga/{dataCid.toString()}/?filename={file.name}</a></h5>
+<h5><a href={`https://cloudflare-ipfs.com/ipfs/${dataCid}/?filename=${file.name}`} className='blue' rel="noopener" target="_blank">https://cloudflare-ipfs.com/ipfs/{dataCid.toString()}/?filename={file.name}</a></h5>
+<h5><a href={`https://gateway.ipfs.io/ipfs/${dataCid}/?filename=${file.name}`} className='blue' rel="noopener" target="_blank">https://gateway.ipfs.io/ipfs/{dataCid.toString()}/?filename={file.name}</a></h5>
+<h5><a href={`https://gateway.ipfscdn.io/ipfs/${dataCid}/?filename=${file.name}`} className='blue' rel="noopener" target="_blank">https://gateway.ipfscdn.io/ipfs/{dataCid.toString()}/?filename={file.name}</a></h5>
+<h5><a href={`https://ipns.co/ipfs/${dataCid}/?filename=${file.name}`} className='blue' rel="noopener" target="_blank">https://ipns.co/ipfs/{dataCid.toString()}/?filename={file.name}</a></h5>
+<h5><a href={`https://gateway.pinata.cloud/ipfs/${dataCid}/?filename=${file.name}`} className='blue' rel="noopener" target="_blank">https://gateway.pinata.cloud/ipfs/{dataCid.toString()}/?filename={file.name}</a></h5>
 
 
 
