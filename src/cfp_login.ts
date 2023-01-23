@@ -1,5 +1,5 @@
-import { CFP_COOKIE_MAX_AGE } from './components/constants';
-import { sha256, getCookieKeyValue } from './components/utils';
+import { CFP_COOKIE_MAX_AGE } from './constants';
+import { sha256, getCookieKeyValue } from './utils';
 
 export async function onRequestPost(context: {
   request: Request;

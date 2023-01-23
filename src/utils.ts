@@ -1,4 +1,4 @@
-import { CFP_COOKIE_KEY } from './components/constants';
+import { CFP_COOKIE_KEY } from './constants';
 
 export async function sha256(str: string): Promise<string> {
   const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
