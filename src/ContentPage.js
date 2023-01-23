@@ -38,10 +38,10 @@ export function ContentPage () {
   return (
     <form onSubmit={handleUploadSubmit}>
       <div className='db mb3'>
-        <label htmlFor='file' className='db mb2'>File:</label>
+        <label htmlFor='file' className='db mb2'>Arquivo:</label>
         <input id='file' className='db pa2 w-100 ba br2' type='file' onChange={e => setFile(e.target.files[0])} required />
       </div>
-      <button type='submit' className='ph3 pv2'>Upload</button>
+      <button type='submit' className='ph3 pv2'>UPLOAD</button>
     </form>
   )
 }
@@ -50,7 +50,7 @@ const Uploading = ({ file, uploadedCarChunks }) => (
   <div className='flex items-center'>
     <div className='spinner mr3 flex-none' />
     <div className='flex-auto'>
-      <p className='truncate'>Uploading DAG for {file.name}</p>
+      <p className='truncate'>Upando em partes para: {file.name}</p>
       {uploadedCarChunks.map(({ cid, size }) => (
         <p key={cid.toString()} className='f7 truncate'>
           {cid.toString()} ({size} bytes)
@@ -71,7 +71,7 @@ const Errored = ({ error }) => (
 const Done = ({ file, dataCid, uploadedCarChunks }) => (
 
   <div>
-    <p className='near-white'>Chunks ({uploadedCarChunks.length}):</p>
+    <p className='near-white'>Partes Divididas ({uploadedCarChunks.length}):</p>
     {uploadedCarChunks.map(({ cid, size }) => (
       <p key={cid.toString()} className='f7 truncate'>
         {cid.toString()} ({size} bytes)
@@ -79,25 +79,19 @@ const Done = ({ file, dataCid, uploadedCarChunks }) => (
     ))}
     
     <h1 className='near-white'>UPLOAD COMPLETO!</h1>
-    <p className='near-white'>HASH: {dataCid.toString()}</p>
- 
-<a href={`https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`} className='blue'>https://LinkDiretoPremium.ga/{dataCid.toString()}/?filename={file.name}</a>{'\n'}
-<a href={`https://w3s.link/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>https://ipfs.astyanax.io/ipfs/{dataCid.toString()}/?filename={file.name}</a>{'\n'}
-<a href={`https://cloudflare-ipfs.com/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>https://cloudflare-ipfs.com/ipfs/{dataCid.toString()}/?filename={file.name}</a>{'\n'}
-<a href={`https://gateway.ipfs.io/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>https://gateway.ipfs.io/ipfs/{dataCid.toString()}/?filename={file.name}</a>{'\n'}
-<a href={`https://fleek.ipfs.io/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>https://fleek.ipfs.io/ipfs/{dataCid.toString()}/?filename={file.name}</a>{'\n'}
-<a href={`https://${dataCid}.ipfs.ipfs-gateway.cloud/?filename=${file.name}`} className='blue'>https://{dataCid.toString()}.ipfs.ipfs-gateway.cloud/?filename={file.name}</a>{'\n'}
-<a href={`https://gateway.ipfscdn.io/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>https://gateway.ipfscdn.io/ipfs/{dataCid.toString()}/?filename={file.name}</a>{'\n'}
-<a href={`https://${dataCid}.ipfs.dweb.link/?filename=${file.name}`} className='blue'>https://{dataCid.toString()}.ipfs.dweb.link/?filename={file.name}</a>{'\n'}
-<a href={`https://${dataCid}.ipfs.storry.tv/?filename=${file.name}`} className='blue'>https://{dataCid.toString()}.ipfs.storry.tv/?filename={file.name}</a>{'\n'}
-<a href={`https://ipfs.astyanax.io/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>https://{dataCid.toString()}.ipfs.storry.tv/?filename={file.name}</a>{'\n'}
-<a href={`https://ipfs.best-practice.se/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>https://ipfs.best-practice.se/ipfs/${dataCid.toString()}/?filename={file.name}</a>{'\n'}
-<a href={`https://${dataCid}.ipfs.nftstorage.link/ipfs/${dataCid}/?filename=${file.name}`} className='blue'>https://{dataCid.toString()}.ipfs.nftstorage.link/ipfs/{dataCid.toString()}/?filename={file.name}</a>{'\n'}
-<a href={`https://${dataCid}.ipfs.4everland.io/?filename=${file.name}`} className='blue'>https://{dataCid.toString()}.ipfs.4everland.io/?filename={file.name}</a>{'\n'}
-{'\n'}
-{'\n'}
-</div>
-)
+    <p className='near-white'>HASH:{dataCid.toString()}</p>
 
+<h5><a href={`https://LinkDiretoPremium.ga/${dataCid}/?filename=${file.name}`} className='blue' target="_blank">https://LinkDiretoPremium.ga/{dataCid.toString()}/?filename={file.name}</a></h5>
+<h5><a href={`https://cloudflare-ipfs.com/ipfs/${dataCid}/?filename=${file.name}`} className='blue' target="_blank">https://cloudflare-ipfs.com/ipfs/{dataCid.toString()}/?filename={file.name}</a></h5>
+<h5><a href={`https://gateway.ipfs.io/ipfs/${dataCid}/?filename=${file.name}`} className='blue' target="_blank">https://gateway.ipfs.io/ipfs/{dataCid.toString()}/?filename={file.name}</a></h5>
+<h5><a href={`https://gateway.ipfscdn.io/ipfs/${dataCid}/?filename=${file.name}`} className='blue' target="_blank">https://gateway.ipfscdn.io/ipfs/{dataCid.toString()}/?filename={file.name}</a></h5>
+<h5><a href={`https://ipns.co/ipfs/${dataCid}/?filename=${file.name}`} className='blue' target="_blank">https://ipns.co/ipfs/{dataCid.toString()}/?filename={file.name}</a></h5>
+<h5><a href={`https://gateway.pinata.cloud/ipfs/${dataCid}/?filename=${file.name}`} className='blue' target="_blank">https://gateway.pinata.cloud/ipfs/{dataCid.toString()}/?filename={file.name}</a></h5>
+
+
+
+
+  </div>
+)
 
 export default withIdentity(ContentPage)
